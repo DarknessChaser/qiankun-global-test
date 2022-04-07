@@ -6,17 +6,17 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     commonData: {
-      // parent: 1
+      parent: 0
     },
-    axios: null,
+    name: '',
   },
   mutations: {
     setCommonData(state, val){
       state.commonData = val;
     },
-    setAxios(state, val){
-      state.axios = val;
-    }
+    setName(state, val){
+      state.name = val;
+    },
   },
   actions: {
   },

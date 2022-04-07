@@ -27,6 +27,13 @@ registerMicroApps([
     props: { data : store }
   },
   {
+    name: 'app-vue-history2',
+    entry: 'http://localhost:2233',
+    container: '#appContainer',
+    activeRule: '/app-vue-history2',
+    props: { data : store }
+  },
+  {
     name: 'app-vue-vite',
     entry: 'http://localhost:3333',
     container: '#appContainer',

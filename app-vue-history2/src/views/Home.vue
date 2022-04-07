@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <button @click="changeChildState">
-      this.$store.state.commonData = { parent: 2 };
-      this.$store.commit('setName','app-vue-history');
+      this.$store.state.commonData = { parent: 3 };
+      this.$store.commit('setName','app-vue-history2');
     </button>
     <div>commonData.parent:{{ commonData.parent }}</div>
     <div>$store.state.name:{{ $store.state.name }}</div>
@@ -27,8 +27,8 @@ export default {
   },
   methods: {
     changeChildState() {
-      this.$store.state.commonData = { parent: 2 };
-      this.$store.commit('setName','app-vue-history');
+      this.$store.state.commonData = { parent: 3 };
+      this.$store.commit('setName','app-vue-history2');
     }
   }
 }
